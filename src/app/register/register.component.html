@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login And Reistration</title>
+</head>
+<body class="text-center" >
+    <form (submit) = 'register()' class="form-signin">
+        <!-- <img class="mb-4" src="../../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72"> -->
+        <h1 class="h3 mb-3 font-weight-normal">Please Register to sign in</h1>
+        <label for="name" class="sr-only" >First Name Last Name</label>
+        <input type="name" name = "name" id="inputEmail" class="form-control" placeholder="FirstName LastName" required autofocus [(ngModel)]= "user.name" #name= "ngModel">
+        <label for="inputEmail" class="sr-only">Email</label>
+        <input type="email" name="email" class="form-control" placeholder="Email" required minlength=3 [(ngModel)] = "user.email" #email= "ngModel">
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" name = "password" id="inputPassword" class="form-control" placeholder="Password" required [(ngModel)] = "user.password" #password= "ngModel">
+        <label for="inputPassword" class="sr-only">Confirm Password</label>
+            <input type="password" name="cpassword" class="form-control"  placeholder="re-type Password" required minlength=6 [(ngModel)] = "user.cpassword" #cpassword= "ngModel" class="form-control">
+        <div class="checkbox mb-3">
+          <br>
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+        <br>
+     
+        
+      </form>
+      <form (submit) = 'loginpage()' class="form-signin">
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Already Registered ? Sign In</button>
+        <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
+      </form>
+     
+      <!-- Validations -->
+    
+</body>
+</html>
