@@ -1,10 +1,15 @@
 # NewLoginReg
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.2.
+This project is a sample representation of login and registration. Post login the application will take you to landing page(The login functionality is not completely built)
+
+To Do : 
+Add details page for the instructors
+Add file upload functionality
+Enhance login and registration functionality
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:8000/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 

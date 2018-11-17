@@ -10,6 +10,8 @@ import { InterlinkService } from './interlink.service';
 import { HttpClientModule} from '@angular/common/http';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { RegisterComponent } from './register/register.component';
+import { AboutmeComponent } from './aboutme/aboutme.component';
+import { ResumeComponent } from './resume/resume.component';
 
 
 
@@ -18,7 +20,9 @@ import { RegisterComponent } from './register/register.component';
     AppComponent,
     LoginComponent,
     DashboardComponent,
-    RegisterComponent
+    RegisterComponent,
+    AboutmeComponent,
+    ResumeComponent
   ],
   imports: [
     BrowserModule,
